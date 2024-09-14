@@ -6,9 +6,15 @@ If the function's definition is in a generated `*_templ.go` file, it searches fo
 
 This extension is a workaround for https://github.com/a-h/templ/issues/387 where goToDefinition in vscode will take you to the generated go file instead of the `.templ` file's `templ` definition.
 
-See also: https://github.com/templ-go/templ-vscode
+Works with [templ-vscode](https://github.com/templ-go/templ-vscode).
 
 Installation:
+
+```
+ext install lsl.vscode-templ-go-to-definition
+```
+
+From source:
 
 ```
 npm run package
