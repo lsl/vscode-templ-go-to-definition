@@ -1,0 +1,36 @@
+{
+  "name": "templ-go-to-definition",
+  "displayName": "Templ Go To Definition",
+  "description": "Implements a definition provider for templ template function definitions.",
+  "publisher": "lsl",
+  "version": "0.0.0",
+  "engines": {
+    "vscode": "^1.92.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "repository": {
+    "url": "https://github.com/lsl/vscode-templ-go-to-definition"
+  },
+  "main": "./out/extension.js",
+  "activationEvents": [
+    "onLanguage:go"
+  ],
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "format": "npx prettier --write \"src/**/*.ts\"",
+    "version": "npx standard-version",
+    "package": "npx vsce package",
+    "publish": "npx vsce publish"
+  },
+  "devDependencies": {
+    "@types/node": "^22.5.1",
+    "@types/vscode": "^1.92.0",
+    "tslint": "^6.1.3",
+    "typescript": "^5.5.4",
+    "vscode-languageclient": "^9.0.1"
+  }
+}
